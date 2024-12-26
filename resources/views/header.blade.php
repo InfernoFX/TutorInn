@@ -5,24 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TutorInn</title>
 
-    <!-- Bootstrap CSS -->
+   
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <style>
         @import url("https://fonts.googleapis.com/css?family=Kameron");
     </style>
-    <!-- Custom CSS -->
+    
     <link rel="stylesheet" href="/css/head.css">
 
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
-    <!-- Navbar Section -->
+    
      <center>
     <div class="container-fluid p-3 position-fixed w-100" style="top: 5%; z-index: 100;">
         <div class="d-flex align-items-center justify-content-between">
             <!-- Circle Header -->
-            <img src="/Element/EllipseHeader.png" class="rounded-circle shadow-lg" 
+            <img src="{{ asset("/Element/EllipseHeader.png") }}" class="rounded-circle shadow-lg" 
                  style="width: 14vw; height: 14vw; position: absolute; top: -2vw; left: 4%; z-index: -1;">
 
             <!-- Header Box -->
@@ -31,7 +31,7 @@
                 
                 <!-- Logo -->
                 <div class="logoBox">
-                    <img src="/Element/Logo Navbar.png" class="iconLogo me-2" style="height: 5vw; margin-top: 3%; margin-left: 5%;">
+                    <img src="{{ asset("/Element/Logo Navbar.png")}}" class="iconLogo me-2" style="height: 5vw; margin-top: 3%; margin-left: 5%;">
                 </div>
 
                 <!-- Navigation Links -->
