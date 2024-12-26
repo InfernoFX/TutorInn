@@ -27,7 +27,7 @@
     <p class="pick-tutor-title">Pick Your Tutor</p>
     <div class="buttons-line">
       <button class="back-button">
-        <a href="{{ route('homepage') }}"><img src="{{ URL::asset('Element/arrow.png') }}" alt="" /></a>
+        <a href="{{ route('homepage') }}"><img src="{{ asset('Element/arrow.png') }}" alt="" /></a>
       </button>
     </div>
 
@@ -41,9 +41,7 @@
                 <div class="tutor-items">
                     <center>
                         <a href="{{ route('view_profileTutor', ['name' => $tutor->name, 'subject' => $subject]) }}" style="text-decoration: none; color: black;">
-                            <img src="{{ $tutor->mahasiswa && $tutor->mahasiswa->profilePicture 
-                                ? asset('storage/' . $tutor->mahasiswa->profilePicture)
-                                : asset('Element/profile Icon.png') }}" 
+                            <img src="{{ asset('Element/profile Icon.png') }}" 
                                 alt="Profile Picture" 
                                 class="profileOthers">
                         
