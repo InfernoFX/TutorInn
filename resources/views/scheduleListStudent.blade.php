@@ -7,6 +7,13 @@
     <link rel="stylesheet" href="css/scheduleListStudent.css" />
 </head>
 <body>
+    <script>
+      let subMenu = document.getElementById("subMenu");
+
+      function toggleMenu(){
+          subMenu.classList.toggle("open-menu")
+      }
+    </script>
     @include('header')
     <a href="/homepage"><img src="/Element/arrow.png" class="backButton"></a>
     <div class="Schedule_Student">
